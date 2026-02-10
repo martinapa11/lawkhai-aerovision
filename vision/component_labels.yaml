@@ -1,0 +1,38 @@
+# Component labels for Lawkhai Aerovision visual annotations.
+#
+# These labels are intentionally generic and training-focused.
+# They describe major system components conceptually, not
+# maintenance actions or procedures.
+#
+# This file can be used by both:
+# - Static image / video annotation tools.
+# - Optional YOLO-based detectors (Phase 1.5 / 2).
+
+electrical:
+  - id: GENERATOR
+    name: "Generator"
+    description: "Converts mechanical energy from the engine or APU into electrical power for the aircraft's buses."
+  - id: AC_BUS
+    name: "AC bus"
+    description: "A distribution node that routes AC electrical power to multiple loads."
+  - id: TRU
+    name: "Transformer-rectifier unit (TRU)"
+    description: "Converts AC power to DC power for DC buses and equipment."
+  - id: DC_BUS
+    name: "DC bus"
+    description: "Distribution bus providing DC power to selected aircraft systems."
+
+hydraulic:
+  - id: RESERVOIR
+    name: "Hydraulic reservoir"
+    description: "Stores hydraulic fluid and provides it to the system under controlled conditions."
+  - id: PUMP
+    name: "Hydraulic pump"
+    description: "Raises hydraulic fluid pressure to a level suitable for system operation."
+  - id: MANIFOLD
+    name: "Hydraulic manifold"
+    description: "Directs pressurised fluid to different branches of the system."
+  - id: ACTUATOR
+    name: "Actuator"
+    description: "Uses hydraulic pressure to produce mechanical movement, for example in flight controls or landing gear."
+
